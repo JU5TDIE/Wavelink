@@ -95,6 +95,10 @@ class DiscordVoiceCloseType(enum.Enum):
         4015
     UNKNOWN_ENCRYPTION_MODE
         4016
+    RATE_LIMITED
+        4021
+    CALL_TERMINATED
+        4022
     """
 
     CLOSE_NORMAL = 1000  # Not Discord but standard websocket
@@ -110,6 +114,8 @@ class DiscordVoiceCloseType(enum.Enum):
     DISCONNECTED = 4014
     VOICE_SERVER_CRASHED = 4015
     UNKNOWN_ENCRYPTION_MODE = 4016
+    RATE_LIMITED = 4021
+    CALL_TERMINATED = 4022
 
 
 class AutoPlayMode(enum.Enum):
