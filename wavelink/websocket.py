@@ -170,6 +170,7 @@ class Websocket:
             if message.type in (  # pyright: ignore[reportUnknownMemberType]
                 aiohttp.WSMsgType.CLOSED,
                 aiohttp.WSMsgType.CLOSING,
+                aiohttp.WSMsgType.CLOSE,
             ):
                 asyncio.create_task(self.connect())
                 break
